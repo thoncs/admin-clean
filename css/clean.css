@@ -1,0 +1,58 @@
+/************************************
+  Monstra
+  default.css
+*************************************
+  CONTENTS
+    1. GENERAL
+    2. COMPONENTS
+    3. MEDIA QUERIES
+
+*************************************
+    1. GENERAL
+*************************************/
+
+@font-face {
+    font-family: 'Glyphicons Halflings';
+
+    src: url('@site_url/public/assets/fonts/glyphicons-halflings-regular.eot');
+    src: url('@site_url/public/assets/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+    url('@site_url/public/assets/fonts/glyphicons-halflings-regular.woff') format('woff'),
+    url('@site_url/public/assets/fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+    url('@site_url/public/assets/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+
+body {
+	margin-top: 80px;
+}
+
+/* Admin Form */
+.login-body {
+	background-color: #fff;
+	    
+}
+.form-signin {
+    max-width: 400px;
+}
+
+.container .form-signin {
+    margin-top: 40px;
+}
+
+.form-signin .administration-area,
+.form-signin .reset-password-area {
+    margin-top: 40px;
+}
+
+
+/* Error Messages */
+
+.error-message {
+	color: red;
+	font-weight: 700;
+}
+	
+
+
+
+
+
