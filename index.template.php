@@ -77,27 +77,27 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="<?php echo Site::url(); ?>/admin/index.php?id=dashboard"><i class="glyphicon glyphicon-dashboard"></i></a>
+            <a class="navbar-brand" href="<?php echo Site::url(); ?>/admin/index.php?id=dashboard"><i class="glyphicon glyphicon-dashboard text-primary"></i></a>
           </div>
 
           <div class="collapse navbar-collapse" id="admin-navbar-collapse">
             <ul class="nav navbar-nav">
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-edit"></i>  <?php echo __('Content', 'pages'); ?> <b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-edit text-info"></i>  <?php echo __('Content', 'pages'); ?> <b class="caret"></b></a>
                 <ul class="dropdown-menu">
                     <?php Navigation::draw('content'); ?>
                 </ul>
               </li>
               <?php if (Session::exists('user_role') && in_array(Session::get('user_role'), array('admin'))) { ?>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-cog"></i>  <?php echo __('Extends', 'system'); ?> <b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-cog text-info"></i>  <?php echo __('Extends', 'system'); ?> <b class="caret"></b></a>
                 <ul class="dropdown-menu">
                     <?php Navigation::draw('extends'); ?>
                 </ul>
               </li>
               <?php } ?>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-wrench"></i>  <?php echo __('System', 'system'); ?> <b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-wrench text-info"></i>  <?php echo __('System', 'system'); ?> <b class="caret"></b></a>
                 <ul class="dropdown-menu">
                     <?php Navigation::draw('system'); ?>
                 </ul>
@@ -106,15 +106,15 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
 	          <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-question-sign"></i>  <?php echo __('Help', 'system'); ?> <b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-question-sign text-warning"></i>  <?php echo __('Help', 'system'); ?> <b class="caret"></b></a>
                 <ul class="dropdown-menu">
                     <li><a href="https://sheeringenuity.com/cms/documentation" target="_blank"><?php echo __('Documentation', 'system'); ?></a></li>
                     <li><a href="https://sheeringenuity.com/contact" target="_blank">Contact Support</a></li>
                 </ul>
               </li>
-              <li><a href="<?php echo Site::url(); ?>" target="_blank"><i class="glyphicon glyphicon-eye-open"></i>&nbsp;&nbsp;<?php echo __('View Site', 'system'); ?></a></li>
+              <li><a href="<?php echo Site::url(); ?>" target="_blank"><i class="glyphicon glyphicon-eye-open text-info"></i>&nbsp;&nbsp;<?php echo __('View Site', 'system'); ?></a></li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i>&nbsp;&nbsp;<?php echo Session::get('user_login'); ?><b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-user text-primary"></i>&nbsp;&nbsp;<?php echo Session::get('user_login'); ?><b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li><a href="<?php echo Site::url(); ?>/admin/index.php?id=users&action=edit&user_id=<?php echo Session::get('user_id'); ?>"><?php echo __('Profile', 'users')?></a></li>
                   <li><a href="<?php echo Site::url(); ?>/admin/?logout=do"><?php echo __('Log Out', 'users'); ?></a></li>
