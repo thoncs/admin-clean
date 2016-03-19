@@ -18,7 +18,6 @@
     <!-- Styles -->
     <link rel="stylesheet" href="<?php echo Site::url(); ?>/admin/themes/clean/css/bootstrap.css" type="text/css" />
     <link rel="stylesheet" href="<?php echo Site::url(); ?>/public/assets/css/messenger.css" type="text/css" />
-    <link rel="stylesheet" href="<?php echo Site::url(); ?>/admin/themes/clean/css/messenger-theme-air.css" type="text/css" />
     <?php Stylesheet::add('public/assets/css/chocolat.css', 'backend', 2); ?>
     <?php Stylesheet::add('public/assets/css/bootstrap-fileupload.css', 'backend', 3); ?>
     <?php Stylesheet::add('public/assets/css/icheck-blue.css', 'backend', 4); ?>
