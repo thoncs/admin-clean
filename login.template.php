@@ -12,10 +12,10 @@
         <!-- Styles -->
         <link rel="stylesheet" href="<?php echo Site::url(); ?>/admin/themes/clean/css/bootstrap.css" type="text/css" />
         <link rel="stylesheet" href="<?php echo Site::url(); ?>/public/assets/css/messenger.css" type="text/css" />
-        <link rel="stylesheet" href="<?php echo Site::url(); ?>/admin/themes/clean/css/messenger-theme-air.css" type="text/css" />
+        <link rel="stylesheet" href="<?php echo Site::url(); ?>/public/assets/css/messenger-theme-flat.css" type="text/css" />
         <?php Stylesheet::add('public/assets/css/bootstrap-lightbox.css', 'backend', 2); ?>
         <?php Stylesheet::add('public/assets/css/bootstrap-fileupload.css', 'backend', 3); ?>
-        <?php Stylesheet::add('admin/themes/clean/css/default.css', 'backend', 5); ?>
+        <?php Stylesheet::add('admin/themes/clean/css/clean.css', 'backend', 5); ?>
         <?php Stylesheet::load(); ?>
 
         <!-- JavaScripts -->
@@ -58,7 +58,7 @@
       <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
     <![endif]-->
     </head>
-    <body class="login-body">
+    <body class="login-body bg-primary">
 
         <?php
             // Monstra Notifications
@@ -127,7 +127,7 @@
             </div>
 
             <div class="text-center">
-                © 2012 - <?php echo date('Y'); ?> <a href="https://sheeringenuity.com" target="_blank">Sheer Ingenuity, LLC</a> – CMS <?php echo __('Version', 'system'); ?> <?php echo Monstra::VERSION; ?>
+                © 2012 - <?php echo date('Y'); ?>&nbsp;&nbsp;<a href="https://sheeringenuity.com" target="_blank">Sheer Ingenuity, LLC</a> – CMS <?php echo __('Version', 'system'); ?> <?php echo Monstra::VERSION; ?>
             </div>
         </div>
     </body>

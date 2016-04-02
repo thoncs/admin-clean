@@ -150,13 +150,14 @@
         </div>
         <div><?php Action::run('admin_post_template'); ?></div>
       </div>
-      <div class="margin-top-1  margin-bottom-1 hidden-md"></div>
-      <footer class="container visible-md visible-lg">
+      <div class="navbar navbar-default navbar-fixed-bottom">
+      <footer class="container-fluid visible-md visible-lg">
           <p class="pull-right">
             <span>
                © 2012 - <?php echo date('Y'); ?> <a href="https://sheeringenuity.com" target="_blank">Sheer Ingenuity, LLC</a> – CMS <?php echo __('Version', 'system'); ?> <?php echo Monstra::VERSION; ?>
             </span>
           </p>
       </footer>
+      </div>
 </body>
 </html>

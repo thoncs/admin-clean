@@ -27,8 +27,11 @@ body {
 
 /* Admin Form */
 .login-body {
-	background-color: #fff;
-	    
+	background: url(/admin/themes/clean/images/grey_wash_wall.png) repeat;	    
+}
+
+.login-body a {
+	color: #ff851b;
 }
 .form-signin {
     max-width: 400px;
@@ -41,6 +44,13 @@ body {
 .form-signin .administration-area,
 .form-signin .reset-password-area {
     margin-top: 40px;
+    max-width: 400px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #e76b00;
+    -webkit-box-shadow: 10px 10px 38px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 38px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 38px 0px rgba(0,0,0,0.75);
 }
 
 
